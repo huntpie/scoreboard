@@ -6,9 +6,52 @@
     <title>Scoreboard</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/screen.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="hello-world"></h1>
+    <header>
+      <h1>My Score Board</h1>
+    </header>
+    <main>
+      <section class="team1">
+        <h2 class="team1-name">Team 1</h2>
+        <h3 class="team1-score">0</h3>
+        <h3 class="winnerDisplay1" hidden>Winner</h3>
+        <fieldset>
+          <input type="text" class="update-team1-name" />
+          <button class="update-team1-name-button">Update</button>
+        </fieldset>
+        <fieldset>
+          <button class="team1-score-button-plus">+1</button>
+          <button class="team1-score-button-subtract">-1</button>
+        </fieldset>
+      </section>
+
+      <section class="team2">
+        <h2 class="team2-name">Team 2</h2>
+        <h3 class="team2-score">0</h3>
+        <h3 class="winnerDisplay2" hidden>Winner</h3>
+        <fieldset>
+          <input type="text" class="update-team2-name" />
+          <button class="update-team2-name-button">Update</button>
+        </fieldset>
+
+        <fieldset>
+          <button class="team2-score-button-plus">+1</button>
+          <button class="team2-score-button-subtract">-1</button>
+        </fieldset>
+      </section>
+    </main>
+    <section class="reset">
+      <fieldset>
+        <button class="reset-scores" style="width: 60px; height: 30px">
+          RESET
+        </button>
+      </fieldset>
+    </section>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
