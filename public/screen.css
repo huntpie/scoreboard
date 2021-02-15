@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #f1e6eb;
+  background-color: #d9dbc0;
   color: #2b303a;
 }
 
@@ -17,6 +17,7 @@ h1 {
   text-align: center;
   font-family: Monospace;
   margin: 1rem 0 3rem 0;
+  border: thin dotted;
 }
 
 main {
@@ -26,10 +27,11 @@ main {
 }
 
 section {
-  min-width: 15rem;
-  border: thin solid #7c7c7c;
+  min-width: 18rem;
+  border: thick solid #7c7c7c;
   border-radius: 0.3rem;
   margin-bottom: 3rem;
+  background-color: #96ce7b;
 
   display: flex;
   flex-direction: column;
@@ -47,6 +49,20 @@ section h3 {
   font-size: 3rem;
 }
 
+h3.winnerDisplay1 {
+  margin: 1rem 0;
+  font-family: Monospace;
+  font-size: 3rem;
+  visibility: hidden;
+}
+
+h3.winnerDisplay2 {
+  margin: 1rem 0;
+  font-family: Monospace;
+  font-size: 3rem;
+  visibility: hidden;
+}
+
 fieldset {
   padding-left: 0;
   padding-right: 0;
@@ -54,20 +70,40 @@ fieldset {
 }
 
 fieldset input {
-  padding: 0.5rem;
+  padding: .7rem;
 }
 
 fieldset i {
   margin: 0 0.2rem;
 }
 
-fieldset button.team1-score-button {
+fieldset button.team1-score-button-plus {
   color: green;
+  margin: 1rem 0;
+  min-width: 4rem;
 }
 
-fieldset button.subtract {
-  color: #f64545;
+fieldset button.team2-score-button-plus {
+  color: green;
+  margin: 1rem 0;
+  min-width: 4rem;
 }
-fieldset button.reset-scores {
+
+fieldset button.team1-score-button-subtract {
   color: #f64545;
+  margin: 1rem 0;
+  min-width: 4rem;
+
+}
+
+fieldset button.team2-score-button-subtract {
+  color: #f64545;
+  margin: 1rem 0;
+  min-width: 4rem;
+}
+
+fieldset button.reset-scores {
+  color: #f64545; 
+  margin: 1rem 0;
+  min-width: 5rem;
 }
